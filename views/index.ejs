@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Header Stuff (css, jquery) -->
+    <% include headerStuff.ejs %>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <% include navigation.ejs %>
+
+    <div class="container">
+        <div clas="row">
+            <div class="col-lg-12 text-center">
+                <h2><%= title %></h2>
+            </div>
+        </div> <!-- .row -->
+        <div class="row">
+            <div class="col-md-4 col-md-offset-2">
+                <a href="#" class="btn btn-primary btn-large btn-block add-margin-top"><span class="fa fa-github"> Github</span></a>
+                <a href="#" class="btn btn-primary btn-large btn-block add-margin-top"><span class="fa fa-facebook-square"></span> Facebook</a>
+            </div> <!-- .col -->
+            <div class="col-md-4 col-lg-4">
+                <a href="#" class="btn btn-primary btn-large btn-block add-margin-top"><span class="fa fa-linkedin-square"></span> LinkedIn</a>
+                <a href="/projects" class="btn btn-primary btn-large btn-block add-margin-top"><span class="fa fa-sticky-note"></span> Projects</a>
+            </div> <!-- .col -->
+        </div> <!-- .row -->
+    </div> <!-- .container -->
+
+
+    <!-- Footer Section -->
+    <% include footerStuff.ejs %>
+</body>
+</html>
+
