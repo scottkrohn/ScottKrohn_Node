@@ -1,0 +1,7 @@
+dbname: scott_info
+username: root
+password: refinnej8!
+params:
+  host: localhost
+  post: 3306
+  dialect: mysql
