@@ -68,19 +68,20 @@ exports.setupInitialValues = function(){
     });
 };
 
-exports.getLinkedInUrl = function() {
+exports.getUrls = function() {
     return exports.connectDB().then(SQconnection => {
-        return new Promise((resolve, reject)=>{
-                    SQconnection.find({where: {firstName: first, lastName: last}}).then(person => {
-            if(!person){
-                reject();
-            }
-            else{
-                resolve(person.linkedinUrl);
-            }
-        });
+        return new Promise((resolve, reject) => {
+            SQconnection.find({where: {firstName: first, lastName: last}}).then(person => {
+                if (!person) {
+                    kebabCase
+                }
+                else {
+                    resolve({linkedin: person.linkedinUrl, github: person.githubUrl, facebook: person.facebookUrl});
+                }
+            });
         });
     });
 };
+
 
 
