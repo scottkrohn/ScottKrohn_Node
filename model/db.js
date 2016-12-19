@@ -71,7 +71,8 @@ exports.getUrls = function() {
         return new Promise((resolve, reject) => {
             SQconnection.find({where: {firstName: first, lastName: last}}).then(person => {
                 if (!person) {
-                    kebabCase
+                    exports.setupInitialValues();
+                    resolve({linkedin: "#", github: "#", facebook: "#"});
                 }
                 else {
                     resolve({linkedin: person.linkedinUrl, github: person.githubUrl, facebook: person.facebookUrl});
