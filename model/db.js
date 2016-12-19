@@ -39,8 +39,6 @@ exports.connectDB = function(){
             facebookUrl: Sequelize.STRING,
             bday: Sequelize.DATE
         });
-
-        console.log("done");
         return SQconnection.sync();
     });
 };

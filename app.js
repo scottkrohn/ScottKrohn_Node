@@ -4,6 +4,9 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+const session = require('express-session');
+const FileStore = require('session-file-store')(session);
+const passport = require('passport');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -21,13 +24,21 @@ app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
+app.use(cookieParser('keyboard cat'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/vendor/bootstrap', express.static(path.join(__dirname, 'bower_components', 'bootstrap', 'dist')));
 app.use('/vendor/jquery', express.static(path.join(__dirname, 'bower_components', 'jquery', 'dist')));
 
+app.use(session({
+    store: new FileStore({path: "sessions"}),
+    secret: 'keyboard cat',
+    resave: true,
+    saveUninitialized: true
+}));
+users.initPassport(app);
+
 app.use('/', index);
-app.use('/users', users);
+app.use('/users', users.router);
 app.use('/contact', contact);
 app.use('/projects', projects);
 

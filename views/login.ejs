@@ -12,20 +12,21 @@
                 <div class="text-center col-xs-12">
                     <h3>Admin Login</h3>
                 </div>
-                <div class="form-group add-margin-top">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" class="form-control">
-                </div>
-                <div class="col-xs-4 col-xs-offset-4">
+                <form method="POST" action="/users/login">
+                    <div class="form-group add-margin-top">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" class="form-control">
+                    </div>
+                    <div class="col-xs-4 col-xs-offset-4">
 
-                    <input type="submit" class="btn btn-primary add-margin-top form-control" name="submit" >
+                        <input type="submit" class="btn btn-primary add-margin-top form-control" name="submit" >
 
-                </div>
-            </form>
+                    </div>
+                </form>
             </div>
             <form class="form-horizontal">
 

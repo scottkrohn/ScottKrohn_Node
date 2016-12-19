@@ -9,9 +9,19 @@
             <li>
                 <a href="/contact" id="contact">Contact Me</a>
             </li>
-            <li>
-                <a href="/users/login" id="login">Login</a>
-            </li>
+
+            <% if(user) { %>
+                <li>
+                    <a href="/users/logout" id="login">Log Out</a>
+                </li>
+                <li class="pull-right">
+                    <a href="#" id="login">Account: <%= user.username%></a>
+                </li>
+            <% } else { %>
+                <li>
+                    <a href="/users/login" id="login">Login</a>
+                </li>
+            <% } %>
         </ul>
     </nav>
 </div>
