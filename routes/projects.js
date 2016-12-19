@@ -62,7 +62,12 @@ router.get('/', function(req, res, next){
             repoData = JSON.parse(fs.readFileSync("githubRepoData"));
             console.log("Repo cache data used.");
         }
-        res.render('projects', {title: "My Projects", userData: fileUserData['body'], repoData: repoData});
+        res.render('projects', {
+            title: "My Projects",
+            userData: fileUserData['body'],
+            repoData: repoData,
+            user: req.user ? req.user : undefined
+        });
 
     });
 });

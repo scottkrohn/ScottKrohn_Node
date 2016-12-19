@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d6a23bf-9216-477f-a8bf-65d568e36f16" name="Default" comment="Updated db module">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/db.js" afterPath="$PROJECT_DIR$/model/db.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/projects.js" afterPath="$PROJECT_DIR$/routes/projects.js" />
     </list>
     <ignored path="sequelize_mysql.yaml" />
     <ignored path="sequelize_mysql_users.yaml" />
@@ -54,11 +54,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="projects.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="projects.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/routes/projects.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="504">
-                  <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+                <state relative-caret-position="1188">
+                  <caret line="68" column="48" lean-forward="false" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
                   <folding>
                     <element signature="e#0#39#0" expanded="false" />
                   </folding>
@@ -66,11 +66,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="db.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="db.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/model/db.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1278">
-                  <caret line="73" column="48" lean-forward="false" selection-start-line="73" selection-start-column="48" selection-end-line="73" selection-end-column="48" />
+                <state relative-caret-position="792">
+                  <caret line="46" column="32" lean-forward="false" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
                   <folding>
                     <element signature="e#0#40#0" expanded="false" />
                   </folding>
@@ -226,7 +226,6 @@
         <option value="$PROJECT_DIR$/views/footerStuff.ejs" />
         <option value="$PROJECT_DIR$/views/projects.ejs" />
         <option value="$PROJECT_DIR$/githubRepoData" />
-        <option value="$PROJECT_DIR$/routes/projects.js" />
         <option value="$PROJECT_DIR$/schema-mysql.sql" />
         <option value="$PROJECT_DIR$/views/index.ejs" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
@@ -241,6 +240,7 @@
         <option value="$PROJECT_DIR$/views/navigation.ejs" />
         <option value="$PROJECT_DIR$/sequelize_mysql.yaml" />
         <option value="$PROJECT_DIR$/model/db.js" />
+        <option value="$PROJECT_DIR$/routes/projects.js" />
       </list>
     </option>
   </component>
@@ -561,7 +561,7 @@
       <workItem from="1481983911696" duration="6532000" />
       <workItem from="1482011619615" duration="5667000" />
       <workItem from="1482089522976" duration="11971000" />
-      <workItem from="1482170661604" duration="291000" />
+      <workItem from="1482170661604" duration="465000" />
     </task>
     <task id="LOCAL-00001" summary="Updated db module">
       <created>1482068979457</created>
@@ -574,7 +574,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70271000" />
+    <option name="totallyTimeSpent" value="70445000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -903,16 +903,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/projects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -981,10 +971,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/db.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1278">
-          <caret line="73" column="48" lean-forward="false" selection-start-line="73" selection-start-column="48" selection-end-line="73" selection-end-column="48" />
+        <state relative-caret-position="792">
+          <caret line="46" column="32" lean-forward="false" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/projects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="68" column="48" lean-forward="false" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
